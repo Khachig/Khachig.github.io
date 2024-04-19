@@ -1,0 +1,11 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="static/css/style.css" rel="stylesheet">
+    <script src="static/js/htmx.min.js"></script>
+</head>
+<body class="p-10">
+    <% content_for("inner") %>
+</body>
+</html>

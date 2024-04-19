@@ -1,0 +1,11 @@
+<div class="flex flex-col gap-8 items-left">
+<h1 class="text-xl font-bold">Hello from index.etlua!</h1>
+<button
+    hx-get="/apiroute"
+    hx-target="previous <h1 />"
+    hx-swap="innerHTML"
+    class="px-2 py-1 bg-blue-300 rounded max-w-20"
+>
+    Click!!!
+</button>
+</div>

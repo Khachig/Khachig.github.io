@@ -1,0 +1,10 @@
+(let [create-router (. (require :routing) :create-router)
+      lapis (require :lapis)
+      api (require :api)
+      app (lapis.Application)
+      router (create-router app "views")]
+  (app:enable "etlua")
+  (tset app :layout (require :views.layout))
+  (api.setup-routes app)
+  (router)
+  app)
